@@ -7,6 +7,15 @@ class HomeLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return  Container(
+     decoration: BoxDecoration(
+      image: DecorationImage(image: AssetImage('assets/image/background.png'), fit: BoxFit.fill),
+     ),
+      child: Scaffold(
+       appBar: AppBar(
+        automaticallyImplyLeading: false,
+       ),
+      ),
+    );
   }
 }
