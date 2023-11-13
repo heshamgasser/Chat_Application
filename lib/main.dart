@@ -1,5 +1,6 @@
 import 'package:chat_app/layout/home_layout.dart';
 import 'package:chat_app/screen/sign_in_screen.dart';
+import 'package:chat_app/screen/sign_up_screen.dart';
 import 'package:chat_app/style/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -25,6 +26,8 @@ class ChatApplication extends StatelessWidget {
           routes: {
             HomeLayout.routeName:(context) => const HomeLayout(),
             SignInScreen.routeName: (context) => SignInScreen(),
+            SignUpScreen.routeName:(context) => SignUpScreen(),
+
           },
         );
       },

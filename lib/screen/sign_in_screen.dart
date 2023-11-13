@@ -1,3 +1,4 @@
+import 'package:chat_app/screen/sign_up_screen.dart';
 import 'package:chat_app/screen/widget/custom_textFormField.dart';
 import 'package:chat_app/style/app_color.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class SignInScreen extends StatelessWidget {
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           title: Text(
             'Login',
             style: Theme.of(context).textTheme.titleLarge,
@@ -85,7 +87,9 @@ class SignInScreen extends StatelessWidget {
                   height: 20.h,
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, SignUpScreen.routeName);
+                  },
                   child: Text(
                     'Or Create My Account',
                     style: Theme.of(context).textTheme.displayMedium,
